@@ -24,6 +24,5 @@ TODO
 * Trap errors coming back from the Guardian API
 * Fully reload the page (with a metatag) once an hour anyway incase the js breaks
 * Put some code in to improve the display on iPhone/iPad and mobile devices
-* Add a "Fork me with GitHub" ribbon thing
 * Add an about tab that links to here
 * Add the abilty for a user to drop in a GuardianAPI key (that'll be stored in a cookie) just to practice doing it
