@@ -105,6 +105,17 @@ control = {
 		} else {
 			$('.ribbonHolder').css('display', 'block');
 		}
+
+		//	Oh please shoot me for doing this, but it's late and I can't be arsed to
+		//	do it properly.
+		//	TODO: FIX THIS!
+		if ($(window).width() <= 600) {
+			$('h2').css('font-size', '16px');
+		} else {
+			$('h2').css('font-size', '24px');
+		}
+
+
 	}
 
 
