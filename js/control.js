@@ -48,6 +48,10 @@ control = {
 		if ('apiUrl' in json && json.apiUrl != control.latestAPIUrl && 'webTitle' in json) {
 			
 			$('#container').stop(true,true).fadeTo(666, 0, function() {
+				
+				//	set the title
+				document.title = json.webTitle + ' | What is the Latest Guardian Headline?';
+				
 				//	build the main headline
 				var h1 = $('<h1>').append($('<a>').attr('href', json.webUrl).html(json.webTitle)).addClass('section_' + json.sectionId);
 				//	build the section part
