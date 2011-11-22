@@ -25,4 +25,7 @@ TODO
 * Fully reload the page (with a metatag) once an hour anyway incase the js breaks
 * Put some code in to improve the display on iPhone/iPad and mobile devices
 * Add an about tab that links to here
-* Add the abilty for a user to drop in a GuardianAPI key (that'll be stored in a cookie) just to practice doing it
+* Add the abilty for a user to drop in a GuardianAPI key (that'll be stored in a 
+  cookie) just to practice doing it
+* Work out what to do when long words with no breaks don't scale down to the
+  correct screen size
