@@ -51,7 +51,7 @@ control = {
 				//	build the main headline
 				var h1 = $('<h1>').append($('<a>').attr('href', json.webUrl).html(json.webTitle)).addClass('section_' + json.sectionId);
 				//	build the section part
-				var h2 = $('<h2>').html('A moment ago in ').append($('<a>').attr('href','http://www.guardian.co.uk/' + json.sectionId).html(json.sectionName).addClass('section_' + json.sectionId));
+				var h2 = $('<h2>').html('A moment ago in ').append($('<a>').attr('href','http://www.guardian.co.uk/' + json.sectionId).html(json.sectionName)).addClass('section_' + json.sectionId);
 				
 				// put both of them into the container
 				$('#container').empty();
@@ -61,9 +61,8 @@ control = {
 				//	Store the apiUrl so we know what to do next time
 				control.latestAPIUrl = json.apiUrl;
 				control.lastUpdate = parseInt(new Date().getTime()/1000, 10);
-				$('#container').css('opacity', 0.0);
-				$('#container').css('display', 'block');
-				$('#container').textfill({ innerTag: 'h1', maxFontPixels: 96 });
+				$('#container').css({opacity: 0.0, display: 'block'});
+				$('#container').textfill({ innerTag: 'h1', maxFontPixels: 128 });
 				$('#container').fadeTo(666, 1);
 			});
 			
