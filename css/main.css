@@ -15,7 +15,14 @@ body {
 	right: 0;
 	border: 0;
 	opacity: 0.4;
+	display: none;
 }
+
+@media screen { 
+	.ribbon {
+		display: block;
+	}
+} 
 
 h1 {
 	font-weight: 900;
