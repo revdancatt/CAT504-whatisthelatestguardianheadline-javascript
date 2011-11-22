@@ -3,11 +3,20 @@ control = {
 	latestAPIUrl: '',
 	lastUpdate: 0,
 	loadMoreTmr: null,
+	resizeTmr: null,
 
 	init: function() {
 		
 		//	This is where we set up all our events and stuff
-		//	in this case we don't have any yet so yay!
+		
+		//	catch the resize event and keep restarting a timer to track it
+		//	300ms after the final resize event we'll call our function
+		$(window).resize(function () {
+			if (control.resizeTmr !== null) {
+				clearTimeout(control.resizeTmr);
+			}
+			control.resizeTmr = setTimeout(control.resized, 300);
+		});
 
 		//	Load in the latest headline
 		this.getLatestHeadline();
@@ -84,6 +93,12 @@ control = {
 			
 		}
 		
+	},
+	
+	//	make the text fit into the window again
+	resized: function() {
+		$('#container').css('font-size', '128px');
+		$('#container').textfill({ innerTag: 'h1', maxFontPixels: 128 });
 	}
 
 

@@ -9,20 +9,27 @@ body {
 	height: 100%;
 }
 
+
 .ribbon {
 	position: absolute;
 	top: 0;
 	right: 0;
 	border: 0;
 	opacity: 0.4;
-	display: none;
 }
 
 @media screen { 
-	.ribbon {
+	.ribbonHolder {
 		display: block;
 	}
 } 
+
+@media handheld {
+	.ribbonHolder {
+		display: nonek;
+	}
+} 
+
 
 h1 {
 	font-weight: 900;
