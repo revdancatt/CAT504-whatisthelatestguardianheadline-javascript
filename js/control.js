@@ -42,8 +42,9 @@ control = {
 
 		//	Make sure it has an apiUrl and that it's different
 		//	(and therefor in theory, newer) that the current
-		if ('apiUrl' in json && json.apiUrl != control.latestAPIUrl) {
-			console.log(json);
+		if ('apiUrl' in json && json.apiUrl != control.latestAPIUrl && 'webTitle' in json) {
+			var h1 = $('<h1>').html(json.webTitle);
+            $('#container').append(h1);
 		}
 		
 	}
