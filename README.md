@@ -15,8 +15,8 @@ Cloud9 seems a bit of an odd way of doing things and I'll write up my feelings
 about it soon. Anyway, if it's something that can be forked/cloned and/or viewed
 on Cloud9 then you'd possibly do that here and here...
 
-http://c9.io/revdancatt/whatisthelatestguardianheadline
-http://c9.io/revdancatt/whatisthelatestguardianheadline/workspace/index.html
++ http://c9.io/revdancatt/whatisthelatestguardianheadline
++ http://c9.io/revdancatt/whatisthelatestguardianheadline/workspace/index.html
 
 TODO
 ----
