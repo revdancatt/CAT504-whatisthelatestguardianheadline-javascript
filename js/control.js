@@ -21,7 +21,6 @@ control = {
 
 	getLatestHeadline: function () {
 	
-		console.log('here');
 		$.jsonp({
 			url: 'http://content.guardianapis.com/search?page-size=1&format=json&callback=?',
 			success: function (json) {
@@ -48,7 +47,7 @@ control = {
 		//	(and therefor in theory, newer) that the current
 		if ('apiUrl' in json && json.apiUrl != control.latestAPIUrl && 'webTitle' in json) {
 			
-			$('#container').fadeOut('slow', function() {
+			$('#container').stop(true,true).fadeTo(666, 0, function() {
 				//	build the main headline
 				var h1 = $('<h1>').append($('<a>').attr('href', json.webUrl).html(json.webTitle)).addClass('section_' + json.sectionId);
 				//	build the section part
@@ -62,7 +61,10 @@ control = {
 				//	Store the apiUrl so we know what to do next time
 				control.latestAPIUrl = json.apiUrl;
 				control.lastUpdate = parseInt(new Date().getTime()/1000, 10);
-				$('#container').fadeIn('fast');
+				$('#container').css('opacity', 0.0);
+				$('#container').css('display', 'block');
+				$('#container').textfill({ innerTag: 'h1', maxFontPixels: 96 });
+				$('#container').fadeTo(666, 1);
 			});
 			
 		} else {
