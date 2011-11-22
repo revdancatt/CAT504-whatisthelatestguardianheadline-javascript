@@ -42,7 +42,7 @@ control = {
 
 		//	Make sure it has an apiUrl and that it's different
 		//	(and therefor in theory, newer) that the current
-		if 'apiUrl' in json && json.apiUrl != control.latestAPIUrl {
+		if ('apiUrl' in json && json.apiUrl != control.latestAPIUrl) {
 			console.log(json);
 		}
 		
