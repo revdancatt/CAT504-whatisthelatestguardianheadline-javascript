@@ -9,6 +9,9 @@ body {
 	height: 100%;
 }
 
+.ribbonHolder {
+	display: none;
+}
 
 .ribbon {
 	position: absolute;
@@ -17,19 +20,6 @@ body {
 	border: 0;
 	opacity: 0.4;
 }
-
-@media screen { 
-	.ribbonHolder {
-		display: block;
-	}
-} 
-
-@media handheld {
-	.ribbonHolder {
-		display: nonek;
-	}
-} 
-
 
 h1 {
 	font-weight: 900;

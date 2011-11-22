@@ -75,7 +75,7 @@ control = {
 				control.latestAPIUrl = json.apiUrl;
 				control.lastUpdate = parseInt(new Date().getTime()/1000, 10);
 				$('#container').css({opacity: 0.0, display: 'block'});
-				$('#container').textfill({ innerTag: 'h1', maxFontPixels: 128 });
+				control.resized();
 				$('#container').fadeTo(666, 1);
 			});
 			
@@ -99,6 +99,12 @@ control = {
 	resized: function() {
 		$('#container').css('font-size', '128px');
 		$('#container').textfill({ innerTag: 'h1', maxFontPixels: 128 });
+		
+		if ($(window).width() <= 768) {
+			$('.ribbonHolder').css('display', 'none');
+		} else {
+			$('.ribbonHolder').css('display', 'block');
+		}
 	}
 
 
