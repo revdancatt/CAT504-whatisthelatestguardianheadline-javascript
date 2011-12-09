@@ -29,3 +29,4 @@ TODO
   cookie) just to practice doing it
 * Work out what to do when long words with no breaks don't scale down to the
   correct screen size
+* Make sure Right to Left is working when displaying Arabic headlines
