@@ -6,7 +6,7 @@ bit of backend code to do various bits and bobs. This is a re-implementation
 using just javascript as a test of GitHub hosted pages. The GitHub hosted
 version can be found at...
 
-http://revdancatt.github.com/whatisthelatestguardianheadline
+http://revdancatt.github.com/CAT504-whatisthelatestguardianheadline-javascript
 
 I was also testing the Cloud9 IDE, I created an empty shell of a project here
 on GitHub and then pulled it over to Cloud9 where all the editing took place.
