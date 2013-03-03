@@ -1,3 +1,5 @@
+![Screen Shot](http://cattopus23.com/img/panel-CAT504.png)
+
 What is the latest Guardian Headline
 ====================================
 
@@ -6,17 +8,8 @@ bit of backend code to do various bits and bobs. This is a re-implementation
 using just javascript as a test of GitHub hosted pages. The GitHub hosted
 version can be found at...
 
-http://revdancatt.github.com/CAT504-whatisthelatestguardianheadline-javascript
-
-I was also testing the Cloud9 IDE, I created an empty shell of a project here
-on GitHub and then pulled it over to Cloud9 where all the editing took place.
-
-Cloud9 seems a bit of an odd way of doing things and I'll write up my feelings
-about it soon. Anyway, if it's something that can be forked/cloned and/or viewed
-on Cloud9 then you'd possibly do that here and here...
-
-+ http://c9.io/revdancatt/whatisthelatestguardianheadline
-+ http://c9.io/revdancatt/whatisthelatestguardianheadline/workspace/index.html
++ Running: http://revdancatt.github.com/CAT504-whatisthelatestguardianheadline-javascript/
++ More Information: http://revdancatt.com/2010/11/10/what-is-the-latest-guardian-headline-dot-com/
 
 TODO
 ----
