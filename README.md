@@ -1,7 +1,7 @@
 ![Screen Shot](http://cattopus23.com/img/panel-CAT504.png)
 
-What is the latest Guardian Headline
-====================================
+CAT504 What is the latest Guardian Headline
+===========================================
 
 I wrote whatisthelatestguardianheadline.com on GoogleAppEngine which involved a
 bit of backend code to do various bits and bobs. This is a re-implementation
